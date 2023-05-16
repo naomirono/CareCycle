@@ -4,8 +4,12 @@ import NavbarLanding from './components/NavbarLanding';
 function App() {
 
   return (
-    <>
-      <NavbarLanding/>
+    < > 
+    <div>
+    <NavbarLanding/>
+   
+    </div>
+      
     </>
   )
 }
