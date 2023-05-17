@@ -5,7 +5,7 @@ import Logo from '../assets/carelogo1.png'
 const NavbarLanding = () => {
   return (
     <div>
-        <header className="">
+        <header className="bg-gradient-to-l from-[#dc2430] to-[#7B1FA2]">
         <nav className="max-w-7xl mx-auto pt-2 pb-2 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
