@@ -36,7 +36,7 @@ const LandingPage = () => {
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0">
-    <path fill="#000000" fillOpacity="0.7" d="M0,224L1440,32L1440,320L0,320Z"></path>
+    <path fill="#fff" fillOpacity="0.7" d="M0,300L1440,32L1440,320L0,320Z"></path>
   </svg>
   </section>
 );
