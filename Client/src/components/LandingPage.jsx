@@ -24,9 +24,9 @@ const LandingPage = () => {
     // </section>
     
     <section className="relative h-[90vh] bg-cover bg-no-repeat" style={{ backgroundImage: `url(${Hero})` }}>
-    <div className=" h-full flex flex-col justify-center items-center bg-black bg-opacity-80">
+    <div className=" h-full flex flex-col justify-center items-center bg-black bg-opacity-75">
       <h1 className="text-4xl md:text-6xl font-bold text-white text-center mb-6">Donate Sanitary Pads</h1>
-      <p className="text-lg text-white text-center mb-8">Help provide sanitary pads to girls in need and empower them.</p>
+      <p className="text-lg text-white text-center mb-12">Help provide sanitary pads to girls in need and empower them.</p>
       <Button>Donate Now</Button>
       <div className="flex justify-center mt-16">
         <a href="#" className="text-white hover:text-gray-200 mr-4"><FaFacebookF size={24} /></a>
@@ -36,7 +36,7 @@ const LandingPage = () => {
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0">
-    <path fill="#fff" fillOpacity="0.7" d="M0,300L1440,32L1440,320L0,320Z"></path>
+    <path fill="#fff"  d="M0,300L1440,80L1440,320L0,320Z"></path>
   </svg>
   </section>
 );
