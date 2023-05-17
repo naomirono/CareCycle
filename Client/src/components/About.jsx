@@ -4,7 +4,7 @@ import Button from './Button';
 
 const About = () => {
   return (
-    <section className="py-2 bg-[#fff]">
+    <section className="py-16 bg-[#fff]">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <div className="border-4 border-purple-700">
@@ -12,8 +12,8 @@ const About = () => {
           </div>
         </div>
         <div className="md:w-1/2 md:pl-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About CareCycle</h2>
-          <p className="text-gray-800 mb-6">CareCycle is a non-profit organization dedicated to providing sanitary pads to girls and women in need. We believe that access to menstrual hygiene products is a basic right, and our mission is to ensure that no one is left without the necessary supplies to manage their periods with dignity.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-10">Building a Happy Community Together</h2>
+          <p className="text-gray-800 mb-8">Happiness is contagious, and at CareCycle, we believe in spreading it far and wide. Our vision is to build a community where everyone has access to menstrual hygiene products and support, enabling them to lead happier, healthier lives. By working together, we can create a ripple effect of positivity, compassion, and joy, making a lasting impact on the lives of girls and women in need. Join us in building a happy community where everyone can flourish.</p>
           <Button>Read More</Button>
         </div>
       </div>
