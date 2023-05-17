@@ -1,11 +1,12 @@
 import React from 'react';
+import Image from '../assets/About.jpg'
 
-const AboutSection = () => {
+const About = () => {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-2 bg-gray-100">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-8 md:mb-0">
-          <img src="/path/to/about-image.jpg" alt="About Image" className="w-full" />
+          <img src={Image} alt="About Image" className="w-full" />
         </div>
         <div className="md:w-1/2 md:pl-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About CareCycle</h2>
@@ -19,4 +20,4 @@ const AboutSection = () => {
   );
 }
 
-export default AboutSection;
+export default About;
