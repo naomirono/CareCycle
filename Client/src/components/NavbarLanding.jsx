@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button';
-import Logo from '../assets/carelogo.png'
+import Logo from '../assets/carelogo1.png'
 
 const NavbarLanding = () => {
   return (
