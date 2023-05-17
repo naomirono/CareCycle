@@ -1,6 +1,7 @@
 import NavbarLanding from './components/NavbarLanding';
 import LandingPage from './components/LandingPage';
 import About from './components/About';
+import DonationSection from './components/DonationSection';
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <NavbarLanding/>
     <LandingPage/>
     <About/>
+    <DonationSection/>
     </div>
       
     </>
