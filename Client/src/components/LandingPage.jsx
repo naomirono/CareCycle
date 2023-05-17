@@ -24,7 +24,7 @@ const LandingPage = () => {
     // </section>
     
     <section className="relative h-[90vh] bg-cover bg-no-repeat" style={{ backgroundImage: `url(${Hero})` }}>
-    <div className=" h-full flex flex-col justify-center items-center bg-black bg-opacity-75">
+    <div className=" h-full flex flex-col justify-center items-center bg-[#7B1FA2] bg-opacity-70">
       <h1 className="text-4xl md:text-6xl font-bold text-white text-center mb-6">Donate Sanitary Pads</h1>
       <p className="text-lg text-white text-center mb-12">Help provide sanitary pads to girls in need and empower them.</p>
       <Button>Donate Now</Button>
