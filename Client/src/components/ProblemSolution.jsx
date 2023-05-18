@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from '../assets/About.jpg'
 
 const ProblemSolutionSection = () => {
   return (
@@ -8,7 +9,7 @@ const ProblemSolutionSection = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-6 md:mb-0">
             <img
-              src="/images/problem-solution-image.jpg"
+              src={Image}
               alt="Illustration depicting the problem and solution"
               className="w-full rounded-lg"
             />
