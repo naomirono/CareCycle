@@ -7,7 +7,7 @@ const About = () => {
     <section className="py-16 bg-[#fff] max-w-[1200px] mx-auto">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-8 md:mb-0">
-          <div className="border-4 border-purple-700">
+          <div className="border-4 border-[#7B1FA2]">
           <img src={Image} alt="About Image" className="w-full" />
           </div>
         </div>
