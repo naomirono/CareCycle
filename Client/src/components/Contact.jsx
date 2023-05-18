@@ -8,8 +8,8 @@ const ContactSection = () => {
   };
   
   return (
-    <section className="py-16 bg-white max-w-[1200px] mx-auto">
-      <div className="container mx-auto">
+    <section className="py-16 bg-gray-100 ">
+      <div className="container max-w-[1200px] mx-auto border-4 border-[#7B1FA2] rounded-lg p-6">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
@@ -62,7 +62,7 @@ const ContactSection = () => {
             </div>
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md focus:outline-none"
+              className="bg-[#7B1FA2] hover:bg-blue-600 text-white py-2 px-4 rounded-md focus:outline-none"
             >
               Submit
             </button>
