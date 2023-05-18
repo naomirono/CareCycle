@@ -4,6 +4,7 @@ import About from './components/About';
 import DonationSection from './components/DonationSection';
 import ImpactSection from './components/ImpactSection';
 import TestimonialsSection from './components/Testimonial';
+import ContactSection from './components/Contact';
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <DonationSection/>
     <ImpactSection/>
     <TestimonialsSection/>
+    <ContactSection/>
     </div>
       
     </>
