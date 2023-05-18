@@ -3,6 +3,7 @@ import LandingPage from './components/LandingPage';
 import About from './components/About';
 import DonationSection from './components/DonationSection';
 import ImpactSection from './components/ImpactSection';
+import TestimonialsSection from './components/Testimonial';
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <About/>
     <DonationSection/>
     <ImpactSection/>
+    <TestimonialsSection/>
     </div>
       
     </>
