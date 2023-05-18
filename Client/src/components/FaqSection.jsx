@@ -55,7 +55,7 @@ const FAQSection = () => {
   const visibleFaqs = showAll ? faqs : faqs.slice(0, 4);
 
   return (
-    <section className="bg-gray-100 py-8">
+    <section className="bg-gray-100 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="lg:text-center">
           <h2 className="text-base text-[#7B1FA2] font-semibold tracking-wide uppercase">Frequently Asked Questions</h2>
