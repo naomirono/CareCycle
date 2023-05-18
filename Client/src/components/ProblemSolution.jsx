@@ -1,22 +1,14 @@
 import React from 'react';
-import Image from '../assets/About.jpg'
 
 const ProblemSolutionSection = () => {
   return (
-    <section className="bg-gray-100 py-16">
+    <section className=" py-16 max-w-[1200px] mx-auto">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">The Problem and Our Solution</h2>
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 mb-6 md:mb-0">
-            <img
-              src={Image}
-              alt="Illustration depicting the problem and solution"
-              className="w-full rounded-lg"
-            />
-          </div>
-          <div className="md:w-1/2 md:ml-8">
+        <h2 className="text-3xl font-bold text-center mb-12">Addressing Menstrual Hygiene Challenges</h2>
+        <div className="flex flex-col md:flex-row">
+          <div className="md:w-1/2 md:mr-8 pr-8 border-r-2 border-[#7B1FA2]">
             <div className="mb-6">
-              <h3 className="text-2xl font-bold mb-4">The Problem</h3>
+              <h3 className="text-2xl font-bold mb-4 text-center">The Problem</h3>
               <p className="text-lg text-gray-800">
                 Many girls and women around the world face significant challenges
                 when it comes to menstrual hygiene and access to sanitary pads.
@@ -40,8 +32,10 @@ const ProblemSolutionSection = () => {
                 </li>
               </ul>
             </div>
+          </div>
+          <div className="md:w-1/2 md:ml-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Our Solution</h3>
+              <h3 className="text-2xl font-bold mb-4 text-center">Our Solution</h3>
               <p className="text-lg text-gray-800">
                 At CareCycle, we are dedicated to addressing the challenges faced
                 by girls and women in accessing sanitary pads. Our solution involves:
