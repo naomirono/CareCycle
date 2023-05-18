@@ -82,7 +82,7 @@ const FAQSection = () => {
           {!showAll && (
             <div className="mt-8 text-center">
               <button
-                className="bg-indigo-600 text-white px-6 py-3 rounded-md text-base font-medium hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500"
+                className="bg-[#7B1FA2] text-white px-6 py-3 rounded-md text-base font-medium hover:bg-blue-600 focus:outline-none focus:bg-indigo-500"
                 onClick={handleReadMoreClick}
               >
                 Read More
