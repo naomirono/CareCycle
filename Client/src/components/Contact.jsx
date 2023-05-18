@@ -2,6 +2,11 @@ import React from 'react';
 import { FaEnvelope, FaPhoneAlt, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const ContactSection = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+  };
+  
   return (
     <section className="py-16 bg-white max-w-[1200px] mx-auto">
       <div className="container mx-auto">
@@ -18,23 +23,50 @@ const ContactSection = () => {
             </ul>
           </div>
           <div className="md:w-1/2">
-            <form>
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-gray-800 font-medium mb-2">Your Name</label>
-                <input type="text" id="name" className="border border-gray-400 py-2 px-4 rounded w-full" />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-gray-800 font-medium mb-2">Your Email</label>
-                <input type="email" id="email" className="border border-gray-400 py-2 px-4 rounded w-full" />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="message" className="block text-gray-800 font-medium mb-2">Message</label>
-                <textarea id="message" className="border border-gray-400 py-2 px-4 rounded w-full h-32"></textarea>
-              </div>
-              <button type="submit" className="bg-[#7B1FA2] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-                Submit
-              </button>
-            </form>
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+            <div className="mb-4">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-400"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-400"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border-blue-400"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md focus:outline-none"
+            >
+              Submit
+            </button>
+          </form>
           </div>
         </div>
       </div>
