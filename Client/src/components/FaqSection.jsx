@@ -69,7 +69,7 @@ const FAQSection = () => {
               onMouseLeave={handleQuestionMouseLeave}
             >
               <button
-                className="text-lg leading-6 font-medium text-gray-900 hover:text-indigo-600 focus:outline-none transition duration-150 ease-in-out"
+                className="text-lg leading-6 font-medium text-gray-900 hover:text-[#7B1FA2] focus:outline-none transition duration-150 ease-in-out"
                 onClick={() => handleQuestionClick(index)}
               >
                 {faq.question}
