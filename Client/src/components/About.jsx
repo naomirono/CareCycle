@@ -13,7 +13,10 @@ const About = () => {
         </div>
         <div className="md:w-1/2 md:pl-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-10">Building a Happy Community Together</h2>
-          <p className="text-gray-800 mb-8">Happiness is contagious, and at CareCycle, we believe in spreading it far and wide. Our vision is to build a community where everyone has access to menstrual hygiene products and support, enabling them to lead happier, healthier lives. By working together, we can create a ripple effect of positivity, compassion, and joy, making a lasting impact on the lives of girls and women in need. Join us in building a happy community where everyone can flourish.</p>
+          <p className="text-gray-800">Happiness is contagious, and at CareCycle, we believe in spreading it far and wide. Our vision is to build a community where everyone has access to menstrual hygiene products and support, enabling them to lead happier, healthier lives. By working together, we can create a ripple effect of positivity, compassion, and joy, making a lasting impact on the lives of girls and women in need.</p>
+          <p className="text-gray-800 mb-8">
+            We invite you to join us in our mission to create a world where no one has to compromise their health or dignity due to a lack of access to menstrual hygiene products. Together, we can make a difference one pad at a time.
+          </p>
           <Button>Read More</Button>
         </div>
       </div>
