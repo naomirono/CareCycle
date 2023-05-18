@@ -7,6 +7,7 @@ import ImpactSection from './components/ImpactSection';
 import TestimonialsSection from './components/Testimonial';
 import GetInvolved from './components/GetInvolved';
 import ContactSection from './components/Contact';
+import FAQSection from './components/FaqSection';
 import './App.css'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <TestimonialsSection/>
     <GetInvolved/>
     <ContactSection/>
+    <FAQSection/>
     </div>
       
     </>
