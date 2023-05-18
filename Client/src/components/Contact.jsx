@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaEnvelope, FaPhoneAlt, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Image from '../assets/donation.jpg'
 
 const ContactSection = () => {
   const handleSubmit = (e) => {
@@ -8,8 +9,9 @@ const ContactSection = () => {
   };
   
   return (
-    <section className="py-16 bg-gray-100 ">
-      <div className="container max-w-[1200px] mx-auto border-4 border-[#7B1FA2] rounded-lg p-6">
+    <section className="bg-cover bg-no-repeat" style={{ backgroundImage: `url(${Image})` }}>
+      <div className='bg-white bg-opacity-20 py-16 '>
+      <div className="container max-w-[1200px] mx-auto border-4 border-[#7B1FA2] rounded-[24px] p-6 bg-white">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
@@ -69,6 +71,7 @@ const ContactSection = () => {
           </form>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
