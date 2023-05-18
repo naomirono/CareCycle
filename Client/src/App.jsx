@@ -5,6 +5,7 @@ import ProblemSolutionSection from './components/ProblemSolution';
 import DonationSection from './components/DonationSection';
 import ImpactSection from './components/ImpactSection';
 import TestimonialsSection from './components/Testimonial';
+import GetInvolved from './components/GetInvolved';
 import ContactSection from './components/Contact';
 import './App.css'
 
@@ -20,6 +21,7 @@ function App() {
     <DonationSection/>
     <ImpactSection/>
     <TestimonialsSection/>
+    <GetInvolved/>
     <ContactSection/>
     </div>
       
