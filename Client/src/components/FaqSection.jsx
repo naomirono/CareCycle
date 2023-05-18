@@ -7,24 +7,12 @@ const FAQSection = () => {
       answer: 'You can donate sanitary pads by visiting our "Donate" page and filling out the donation form. We accept both new and unused pads.',
     },
     {
-      question: 'Where do the donated sanitary pads go?',
-      answer: 'The donated sanitary pads go to women and girls in underserved communities, shelters, and schools where menstrual hygiene products are needed the most.',
-    },
-    {
       question: 'Can I make a monetary donation?',
       answer: 'Yes, we also accept monetary donations. You can visit our "Donate" page and choose the monetary donation option.',
     },
-    {
-        question: 'How often should I donate sanitary pads?',
-        answer: 'You can donate sanitary pads at any time. However, we recommend regular donations to ensure a steady supply for those in need. Consider setting up a monthly donation to make a lasting impact.',
-      },
       {
         question: 'Can I donate other menstrual hygiene products besides sanitary pads?',
         answer: 'Absolutely! While sanitary pads are the most commonly requested item, we also accept other menstrual hygiene products such as tampons, menstrual cups, and panty liners.',
-      },
-      {
-        question: 'Are my donations tax-deductible?',
-        answer: 'Yes, we are a registered non-profit organization, and donations made to us are typically tax-deductible. Please consult with your tax advisor for specific details and guidelines.',
       },
       {
         question: 'How can I get involved in volunteering?',
@@ -48,6 +36,20 @@ const FAQSection = () => {
       },
   ];
 
+
+  const [showAll, setShowAll] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleQuestionClick = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+
+  const handleReadMoreClick = () => {
+    setShowAll(true);
+  };
+
+  const visibleFaqs = showAll ? faqs : faqs.slice(0, 5);
+
   return (
     <section className="bg-gray-100 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
@@ -55,13 +57,30 @@ const FAQSection = () => {
           <h2 className="text-base text-[#7B1FA2] font-semibold tracking-wide uppercase">Frequently Asked Questions</h2>
           <p className="mt-2 leading-6 text-3xl font-extrabold text-gray-900">Have a question? We have answers.</p>
         </div>
-        <div className="mt-20">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border-t border-[#7B1FA2] py-8">
-              <dt className="text-lg leading-6 font-medium text-gray-900">{faq.question}</dt>
-              <dd className="mt-2 text-base text-gray-500">{faq.answer}</dd>
+        <div className="mt-12">
+          {visibleFaqs.map((faq, index) => (
+            <div key={index} className="py-2">
+              <button
+                className="text-lg leading-6 font-medium text-gray-900 hover:text-indigo-600 focus:outline-none transition duration-150 ease-in-out"
+                onClick={() => handleQuestionClick(index)}
+              >
+                {faq.question}
+              </button>
+              {activeIndex === index && (
+                <p className="mt-2 text-base text-gray-500">{faq.answer}</p>
+              )}
             </div>
           ))}
+          {!showAll && (
+            <div className="mt-8 text-center">
+              <button
+                className="bg-indigo-600 text-white px-6 py-3 rounded-md text-base font-medium hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500"
+                onClick={handleReadMoreClick}
+              >
+                Read More
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
