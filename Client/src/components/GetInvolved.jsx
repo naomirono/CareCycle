@@ -19,7 +19,7 @@ const GetInvolved = () => {
                 Volunteer
               </h3>
               <p className="mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ligula vitae diam dictum condimentum.
+                Are you passionate about making a difference in the lives of women and girls? Join our volunteer team and contribute to our mission of providing access to sanitary pads. As a volunteer, you will have the opportunity to participate in various activities such as organizing donation drives, conducting awareness campaigns, and assisting in distribution efforts. Together, we can create a positive impact and improve menstrual hygiene in our community.
               </p>
               <p className="mb-4">
                 To volunteer, please contact us at:
@@ -35,7 +35,7 @@ const GetInvolved = () => {
                 Advocate
               </h3>
               <p className="mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ligula vitae diam dictum condimentum.
+                Raise your voice and become an advocate for menstrual hygiene and the importance of access to sanitary pads. By spreading awareness, sharing information, and initiating conversations, you can help break the stigma surrounding menstruation and contribute to a more inclusive and supportive society. Join our advocate network and make a lasting impact on the lives of women and girls in need.
               </p>
               <p className="mb-4">
                 To become an advocate, please contact us at:
@@ -51,7 +51,7 @@ const GetInvolved = () => {
                 Partner
               </h3>
               <p className="mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ligula vitae diam dictum condimentum.
+                Raise your voice and become an advocate for menstrual hygiene and the importance of access to sanitary pads. By spreading awareness, sharing information, and initiating conversations, you can help break the stigma surrounding menstruation and contribute to a more inclusive and supportive society. Join our advocate network and make a lasting impact on the lives of women and girls in need.
               </p>
               <p className="mb-4">
                 To become a partner, please contact us at:
