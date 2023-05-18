@@ -48,7 +48,11 @@ const FAQSection = () => {
     setShowAll(true);
   };
 
-  const visibleFaqs = showAll ? faqs : faqs.slice(0, 5);
+  const handleQuestionMouseLeave = () => {
+    setActiveIndex(null);
+  };
+
+  const visibleFaqs = showAll ? faqs : faqs.slice(0, 4);
 
   return (
     <section className="bg-gray-100 py-8">
@@ -59,7 +63,11 @@ const FAQSection = () => {
         </div>
         <div className="mt-12">
           {visibleFaqs.map((faq, index) => (
-            <div key={index} className="py-2">
+            <div
+              key={index}
+              className="py-2"
+              onMouseLeave={handleQuestionMouseLeave}
+            >
               <button
                 className="text-lg leading-6 font-medium text-gray-900 hover:text-indigo-600 focus:outline-none transition duration-150 ease-in-out"
                 onClick={() => handleQuestionClick(index)}
