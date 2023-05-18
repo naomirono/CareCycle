@@ -11,7 +11,7 @@ const ContactSection = () => {
   return (
     <section className="bg-cover bg-no-repeat" style={{ backgroundImage: `url(${Image})` }}>
       <div className='bg-white bg-opacity-20 py-16 '>
-      <div className="container max-w-[1200px] mx-auto border-4 border-[#7B1FA2] rounded-[24px] p-6 bg-white">
+      <div className="container max-w-[1200px] mx-auto border-4 border-[#7B1FA2] rounded-[24px] p-6 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
