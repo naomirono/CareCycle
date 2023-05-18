@@ -2,6 +2,7 @@ import NavbarLanding from './components/NavbarLanding';
 import LandingPage from './components/LandingPage';
 import About from './components/About';
 import ProblemSection from './components/ProblemSection';
+import ProblemSolutionSection from './components/ProblemSolution';
 import DonationSection from './components/DonationSection';
 import ImpactSection from './components/ImpactSection';
 import TestimonialsSection from './components/Testimonial';
@@ -17,6 +18,7 @@ function App() {
     <LandingPage/>
     <About/>
     <ProblemSection/>
+    <ProblemSolutionSection/>
     <DonationSection/>
     <ImpactSection/>
     <TestimonialsSection/>
