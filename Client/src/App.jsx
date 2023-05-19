@@ -1,5 +1,6 @@
 import NavbarLanding from './components/NavbarLanding';
-import LandingPage from './components/LandingPage';
+// import LandingPage from './components/LandingPage';
+import HeroSection from './components/hero';
 import About from './components/About';
 import ProblemSolutionSection from './components/ProblemSolution';
 import DonationSection from './components/DonationSection';
@@ -17,7 +18,8 @@ function App() {
     < > 
     <div>
     <NavbarLanding/>
-    <LandingPage/>
+    {/* <LandingPage/> */}
+    <HeroSection/>
     <About/>
     <ProblemSolutionSection/>
     <DonationSection/>
