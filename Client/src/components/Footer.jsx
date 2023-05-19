@@ -1,13 +1,13 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Logo from '../assets/carelogo1.png'
 
 const Footer = () => {
   return (
     <footer className="py-6 bg-gradient-to-l from-[#dc2430] to-[#7B1FA2]">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white">
-          <p>&copy; {new Date().getFullYear()} CareCycle Organization</p>
-          <p>All rights reserved.</p>
+        <div>
+        <img className="h-16 w-22" src={Logo} alt="Logo" />
         </div>
         <div className="text-white">
           <ul className="flex space-x-4">
