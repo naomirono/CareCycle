@@ -15,7 +15,6 @@ function App() {
 
   return (
     < > 
-    <div>
     <NavbarLanding/>
     <HeroSection/>
     <About/>
@@ -27,7 +26,6 @@ function App() {
     <ContactSection/>
     <FAQSection/>
     <Footer/>
-    </div>
       
     </>
   )
