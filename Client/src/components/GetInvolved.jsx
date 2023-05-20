@@ -17,7 +17,7 @@ const GetInvolved = () => {
           <p className="mb-4">
             Are you passionate about making a difference in the lives of women and girls? Join our volunteer team and contribute to our mission of providing access to sanitary pads. As a volunteer, you will have the opportunity to participate in various activities such as organizing donation drives, conducting awareness campaigns, and assisting in distribution efforts. Together, we can create a positive impact and improve menstrual hygiene in our community.
           </p>
-          <p className="mb-4">
+          <p className="mb-10">
             To volunteer, please contact us at:
           </p>
           <p className="mb-4">
@@ -49,7 +49,7 @@ const GetInvolved = () => {
           <p className="mb-16">
             Are you an organization, business, or institution that shares our vision of promoting menstrual hygiene and empowering women? Join us as a partner and let's work together to ensure that every woman and girl has access to sanitary pads and the resources they need to lead healthy lives. By partnering with us, we can amplify our efforts and create a larger impact in the community.
           </p>
-          <p className="mb-4">
+          <p className="mb-10">
             To become a partner, please contact us at:
           </p>
           <p className="mb-4">
