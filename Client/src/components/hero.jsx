@@ -26,7 +26,7 @@ const HeroSection = () => {
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0">
-    <path fill="#fff"  d="M0,300L1440,80L1440,320L0,320Z"></path>
+    <path fill="#fff"  d="M0,300L1440,120L1440,320L0,320Z"></path>
   </svg>
     </section>
   );
