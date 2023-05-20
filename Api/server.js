@@ -30,6 +30,15 @@ app.post('/create-checkout-session', async (req, res) => {
     res.json({ id: session.id });
   });
 
+  app.get('/success', (req, res) => {
+    res.send('Payment successful!');
+  });
+  
+  app.get('/cancel', (req, res) => {
+    res.send('Payment canceled.');
+  });
+  
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
   });
