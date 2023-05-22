@@ -4,8 +4,8 @@ import DonateButton from './DonateButton';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-l from-[#dc2430] to-[#7B1FA2] py-20 h-[89vh]">
-    <div className="container mx-auto flex flex-col-reverse md:flex-row items-center">
+    <section className="bg-gradient-to-l from-[#dc2430] to-[#7B1FA2] py-20 h-auto md:h-[89vh]">
+    <div className="container mx-auto flex flex-col md:flex-row items-center">
       <div className="w-full md:w-1/2 pl-8">
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4">
           Empowering Women Through Sanitary Pad Donations
@@ -15,7 +15,7 @@ const HeroSection = () => {
         </p>
         <DonateButton />
       </div>
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 mt-8 md:mt-0">
         <img src={Image} alt="Sanitary Pads" className="max-w-full h-auto" />
       </div>
     </div>
