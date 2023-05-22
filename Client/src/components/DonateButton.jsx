@@ -1,4 +1,8 @@
 import { useState } from 'react';
+import { loadStripe } from '@stripe/stripe-js';
+
+
+const stripePromise = loadStripe('pk_test_51N9pFiDotCtyPckPQclsuxSOsulIBPbrqX69TxXAfbw1teutdVHSlhSypBWKOHXPfwq4oiA6R0FlhzXkgQf7FbsA00BSpiFNyf');
 
 const DonateButton = () => {
   const [loading, setLoading] = useState(false);
@@ -8,7 +12,7 @@ const DonateButton = () => {
 
     const stripe = await stripePromise;
 
-    const response = await fetch('/create-checkout-session', {
+    const response = await fetch('http://localhost:3000/donation', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -37,3 +41,5 @@ const DonateButton = () => {
     </button>
   );
 };
+
+export default DonateButton
