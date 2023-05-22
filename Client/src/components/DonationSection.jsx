@@ -1,5 +1,4 @@
 import React from 'react';
-// import Button from './Button';
 import DonateButton from './DonateButton';
 import Image from '../assets/donation.jpg'
 
@@ -13,7 +12,6 @@ const DonationSection = () => {
         <p className="text-gray-800 mb-6 text-gray-100 text-black text-center">
           Together, we can empower women and break the barriers of menstrual stigma. Your support can provide access to sanitary pads and promote menstrual hygiene education, making a real difference in the lives of girls and women in need.
         </p>
-        {/* <Button>Donate Now</Button> */}
         <DonateButton/>
       </div>
         
