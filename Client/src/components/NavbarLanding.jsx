@@ -1,6 +1,6 @@
-import React from 'react'
-import Button from './Button';
-import Logo from '../assets/carelogo1.png'
+import React from 'react';
+import DonateButton from './DonateButton';
+import Logo from '../assets/carelogo1.png';
 
 const NavbarLanding = () => {
   return (
@@ -31,7 +31,7 @@ const NavbarLanding = () => {
                 FAQ
               </a>
             </div>
-            <Button>Donate Now</Button>
+            <DonateButton/>
           </div>
         </nav>
       </header>
