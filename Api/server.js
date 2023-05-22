@@ -1,13 +1,15 @@
-require('dotenv').config()
-
 const express = require ('express')
-const app = express()
+const cors = require('cors');
+const app = express();
 
-app.use(express.json())
 
-const stripe = require ('stripe')(process.env.STRIPE_PRIVATE_KEY)
+app.use(express.json());
+app.use(cors()); // Enable CORS for all routes
 
-app.post('/create-checkout-session', async (req, res) => {
+const stripe = require ('stripe')('sk_test_51N9pFiDotCtyPckPygs3a7nWC7RypeIJ55aAqHDkNyYZTz0FYdpahi1piYpzrDMj5XN3rhHobivq6RFlyvAjae5m002qEpztp1')
+
+app.post('/donation', async (req, res) => {
+
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: [
@@ -16,8 +18,9 @@ app.post('/create-checkout-session', async (req, res) => {
             currency: 'usd',
             product_data: {
               name: 'Donation',
+              description: 'Supporting menstrual hygiene by providing sanitary towels to women and girls in need',
             },
-            unit_amount: 500, // Amount in cents
+            unit_amount: 5 * 100, // Amount in cents
           },
           quantity: 1,
         },
@@ -26,12 +29,16 @@ app.post('/create-checkout-session', async (req, res) => {
       success_url: 'https://yourwebsite.com/success',
       cancel_url: 'https://yourwebsite.com/cancel',
     });
+
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5173'); // Replace with your frontend's origin
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST'); // Adjust the allowed HTTP methods if needed
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Adjust the allowed headers if needed
   
     res.json({ id: session.id });
   });
 
   app.get('/success', (req, res) => {
-    res.send('Payment successful!');
+    res.send('Thank you for your donation!');
   });
   
   app.get('/cancel', (req, res) => {
