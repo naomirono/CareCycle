@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from '../assets/careherro.png'
+import DonateButton from './DonateButton';
 
 const HeroSection = () => {
   return (
@@ -13,9 +14,10 @@ const HeroSection = () => {
           <p className="text-lg text-white mb-8">
             Join us in ensuring every woman has access to safe and hygienic menstrual products.
           </p>
-          <button className="bg-white text-[#7B1FA2] font-semibold py-3 px-6 rounded-full shadow-lg transition-colors duration-300">
+          {/* <button className="bg-white text-[#7B1FA2] font-semibold py-3 px-6 rounded-full shadow-lg transition-colors duration-300">
             Donate Now
-          </button>
+          </button> */}
+          <DonateButton/>
         </div>
         <div className="w-1/2">
           <img
