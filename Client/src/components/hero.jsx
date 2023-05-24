@@ -13,7 +13,7 @@ const HeroSection = () => {
         <p className="text-lg text-white mb-8">
           Join us in ensuring every woman has access to safe and hygienic menstrual products.
         </p>
-        <DonateButton />
+        <DonateButton/>
       </div>
       <div className="w-full md:w-1/2 mt-8 md:mt-0">
         <img src={Image} alt="Sanitary Pads" className="max-w-full h-auto" />
