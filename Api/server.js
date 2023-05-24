@@ -26,7 +26,7 @@ app.post('/donation', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: 'https://yourwebsite.com/success',
+      success_url: 'https://carecyle.web.app',
       cancel_url: 'https://yourwebsite.com/cancel',
     });
 
