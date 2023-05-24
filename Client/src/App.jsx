@@ -9,7 +9,7 @@ import GetInvolved from './components/GetInvolved';
 import ContactSection from './components/Contact';
 import FAQSection from './components/FaqSection';
 import Footer from './components/Footer';
-import './App.css'
+
 
 function App() {
 
