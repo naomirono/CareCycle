@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProblemSolutionSection = () => {
   return (
-    <section className="py-16 max-w-[1200px] mx-auto">
+    <section className="py-16 max-w-[1200px] mx-auto sm:px-8">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold text-center mb-12">Addressing Menstrual Hygiene Challenges</h2>
     <div className="flex flex-col md:flex-row">
