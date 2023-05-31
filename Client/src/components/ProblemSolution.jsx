@@ -6,7 +6,7 @@ const ProblemSolutionSection = () => {
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold text-center mb-12">Addressing Menstrual Hygiene Challenges</h2>
     <div className="flex flex-col md:flex-row">
-      <div className="md:w-1/2 md:mr-8 pr-8 md:border-r-2 md:border-[#7B1FA2]">
+      <div className="md:w-1/2 md:mr-8 sm:pr-8 md:border-r-2 md:border-[#7B1FA2]">
         <div className="mb-6">
           <h3 className="text-2xl font-bold mb-4 text-center">The Problem</h3>
           <p className="text-lg text-gray-800">
