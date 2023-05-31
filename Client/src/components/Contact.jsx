@@ -10,12 +10,12 @@ const ContactSection = () => {
   
   return (
     <section className="bg-cover bg-no-repeat" style={{ backgroundImage: `url(${Image})` }}>
-      <div className='bg-white bg-opacity-20 py-16 '>
+      <div className='bg-white bg-opacity-20 py-16 px-4 sm:px-8'>
       <div className="container max-w-[1200px] mx-auto border-4 border-[#7B1FA2] rounded-[24px] p-6 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
-            <p className="text-gray-800 mb-6 pr-10">Have questions or want to get involved? We'd love to hear from you. Reach out to us using the contact details below or fill out the form and we'll get back to you as soon as possible.</p>
+            <p className="text-gray-800 mb-6 pr-0 sm:pr-10">Have questions or want to get involved? We'd love to hear from you. Reach out to us using the contact details below or fill out the form and we'll get back to you as soon as possible.</p>
             <ul className="text-gray-800">
               <li className="mb-2"><FaEnvelope className="inline-block mr-2 text-[#7B1FA2]" /> Email: info@carecycle.org</li>
               <li className="mb-2"><FaPhoneAlt className="inline-block mr-2 text-[#7B1FA2]" /> Phone: +1234567890</li>
