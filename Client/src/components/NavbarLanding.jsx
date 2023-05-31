@@ -10,13 +10,13 @@ const NavbarLanding = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img className="h-16 w-22" src={Logo} alt="Logo" />
+              <img className="h-12 w-18 sm:h-16 sm:w-22" src={Logo} alt="Logo" />
             </div>
           </div>
           <div className="md:hidden flex items-center">
             <button className="text-white focus:outline-none">
               <svg
-                className="h-6 w-6"
+                className="h-8 w-8"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
