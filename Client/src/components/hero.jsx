@@ -4,7 +4,7 @@ import DonateButton from './DonateButton';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-l from-[#dc2430] to-[#7B1FA2] py-20 h-auto md:h-[89vh]">
+    <section className="bg-gradient-to-l from-[#dc2430] to-[#7B1FA2] py-20 h-auto md:h-[86vh]">
     <div className="container mx-auto flex flex-col md:flex-row items-center">
       <div className="w-full md:w-1/2 pl-8">
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4">
@@ -20,7 +20,7 @@ const HeroSection = () => {
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="hidden md:block absolute bottom-0">
-      <path fill="#fff" d="M0,300L1440,120L1440,320L0,320Z"></path>
+      <path fill="#fff" d="M0,300L1440,140L1440,320L0,320Z"></path>
     </svg>
   </section>
   
