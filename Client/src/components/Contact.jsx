@@ -9,7 +9,7 @@ const ContactSection = () => {
   };
   
   return (
-    <section className="bg-cover bg-no-repeat" style={{ backgroundImage: `url(${Image})` }}>
+    <section id='contact' className="bg-cover bg-no-repeat" style={{ backgroundImage: `url(${Image})` }}>
       <div className='bg-white bg-opacity-20 py-16 px-4 sm:px-8'>
       <div className="container max-w-[1200px] mx-auto border-4 border-[#7B1FA2] rounded-[24px] p-6 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg">
         <div className="flex flex-col md:flex-row">

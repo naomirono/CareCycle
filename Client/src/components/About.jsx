@@ -4,7 +4,7 @@ import Button from './Button';
 
 const About = () => {
   return (
-    <section className="py-16 bg-[#fff] max-w-[1200px] mx-auto px-4 sm:px-8">
+    <section id='about' className="py-16 bg-[#fff] max-w-[1200px] mx-auto px-4 sm:px-8">
   <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
     <div className="md:w-1/2 mb-8 md:mb-0">
       <div className="border-4 border-[#7B1FA2]">

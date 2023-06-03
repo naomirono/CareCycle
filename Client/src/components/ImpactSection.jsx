@@ -5,7 +5,7 @@ import Schools from '../assets/schools.JPG';
 
 const ImpactSection = () => {
   return (
-    <section className="py-16 bg-[#fff] max-w-[1200px] mx-auto px-4 sm:px-8">
+    <section id='impact' className="py-16 bg-[#fff] max-w-[1200px] mx-auto px-4 sm:px-8">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Impact</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
