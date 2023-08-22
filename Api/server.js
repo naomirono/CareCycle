@@ -1,12 +1,14 @@
 const express = require ('express')
 const cors = require('cors');
 const app = express();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 
 app.use(express.json());
 app.use(cors()); // Enable CORS for all routes
 
-const stripe = require ('stripe')('sk_test_51N9pFiDotCtyPckPygs3a7nWC7RypeIJ55aAqHDkNyYZTz0FYdpahi1piYpzrDMj5XN3rhHobivq6RFlyvAjae5m002qEpztp1')
+const stripe = require ('stripe')(process.env.STRIPE_SECRET_KEY)
 
 app.post('/donation', async (req, res) => {
 
