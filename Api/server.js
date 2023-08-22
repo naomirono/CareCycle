@@ -32,9 +32,9 @@ app.post('/donation', async (req, res) => {
       cancel_url: 'https://yourwebsite.com/cancel',
     });
 
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173'); // Replace with your frontend's origin
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST'); // Adjust the allowed HTTP methods if needed
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Adjust the allowed headers if needed
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST'); 
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); 
   
     res.json({ id: session.id });
   });
